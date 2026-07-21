@@ -30,7 +30,7 @@ browseURL("https://www.presidency.ucsb.edu/")
 
 
 #define url
-#statemnts
+#administation policy statements
 url<-"https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/statements-administration-policy-reagan-1985"
 
 
@@ -57,7 +57,7 @@ extract2(tables, 1)
 
 
 # Looking up a website
-speech <- read_html("https://www.presidency.ucsb.edu/documents/statement-administration-policy-hj-res-46-terminating-the-national-emergency-declared-the")
+speech <- read_html("https://www.presidency.ucsb.edu/documents/statement-administration-policy-h-con-res-86-directing-the-removal-united-states-armed-0")
 
 
 

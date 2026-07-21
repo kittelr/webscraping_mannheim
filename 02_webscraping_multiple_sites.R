@@ -53,7 +53,7 @@ speech_2 <-
   html_nodes(speech,"#block-system-main p") %>%
   html_text()%>%paste( collapse = "")
 
-
+speech_2
 
 #---------------- EXAMPLE 2: Automation ------------------#
 
@@ -90,7 +90,7 @@ titles <- links <- dates <- list()
 for (i in 1:2){
   page<-read_html(resulturls[i])
   titles[[i]]<-html_nodes(page," ") %>% html_text()
-  links[[i]]<-html_nodes(page,"") %>%
+  links[[i]]<-html_nodes(page," ") %>%
     html_attr("href")
   dates[[i]] <- html_nodes(page,"time") %>% html_text()
 }
